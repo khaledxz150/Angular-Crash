@@ -1,2 +1,4 @@
 <app-add-task (onAddTask)="addNewTask($event)"></app-add-task>
 <app-tasks-item *ngFor="let task of tasks" [task]="task" (onDeleteTask)="deleteTask(task)" (onToggleTask)="toggleTask(task)"></app-tasks-item>
+<app-counter-button (onBtnClick)="CounterButtonClick()"></app-counter-button>
+{{Counter}}

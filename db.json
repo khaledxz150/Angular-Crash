@@ -7,10 +7,10 @@
       "reminder": true
     },
     {
-      "id": 2,
-      "text": "Doctors",
-      "day": "May 5th at 2:30pm",
-      "reminder": false
+      "text": "dwadwadwadadwad",
+      "day": "dwa",
+      "reminder": true,
+      "id": 3
     }
   ]
 }

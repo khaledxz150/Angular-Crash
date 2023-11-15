@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Task } from '../../Task';
 import { TaskService } from '../../services/task.service';
 
@@ -10,7 +10,7 @@ import { TaskService } from '../../services/task.service';
 })
 export class TasksComponent implements OnInit {
 
-
+  public Counter:number=0;
   public tasks: Task[] = [];
 
   constructor(private TaskService: TaskService) {
@@ -35,4 +35,9 @@ export class TasksComponent implements OnInit {
     this.TaskService.addTask(task).subscribe((newTask)=>this.tasks.push(newTask));
   }
 
+
+  CounterButtonClick()
+  {
+    this.Counter++;
+  }
 }

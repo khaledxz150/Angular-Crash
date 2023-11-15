@@ -2,10 +2,12 @@ import { Injectable } from '@angular/core';
 import { Task } from '../Task';
 import { Observable } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { myInterceptorInterceptor } from '../my-interceptor.interceptor';
 const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json'
-  })
+  }),
+  interceptors:[myInterceptorInterceptor]
 }
 
 @Injectable({
